@@ -1,2 +1,2 @@
-# password-generator
-Simple password generator 
+# Code Quiz
+A simple js code quiz.
