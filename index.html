@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--required tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="My personal project" />
+    <title>Question Generator</title>
+    <!--bootstrap link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <style>
+       .container {
+        text-align: center;
+       } 
+
+    </style>
+  </head>
+
+  <body>
+    <!--navbar starts here-->
+    <nav class="navbar navbar-expand-lg">
+      <a href="#" class="navbar-brand">View High Scores</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav ml-auto">
+          <a href="#" class="nav-item nav-link">00:00</a>
+        </div>
+      </div>
+    </nav>
+    <!--navbar ends here-->
+    <!--jumbotron starts here-->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Coding Quiz Challenge</h1>
+        
+            <p>
+              Click the button to get started
+            </p>
+            <button class="btn">Start Quiz</button>
+          </div>
+        </div>
+      </div>
+
+    <!--jumbotron ends here-->
+
+
+    <!--javascript functionality will go here on this script-->
+    <script>
+      //questions must be in the same order as the answers 
+      var questions = [
+        "What is an array?",
+        "What key word do you use to declare a function with javascript?",
+        "What characters do you use to comment javascript code"
+      ];
+      //answers must be in the same order as the questions 
+      var answers = [
+        "An array is ",
+        "function",
+        "<!---->"
+      ];
+      //random fillers to help poplate choices 
+      var fillerAnswers = [
+        "python",
+        "dashes",
+        "DOM",
+        "var",
+        "index"
+      ];
+      //users answer stored here 
+      var userAnswer = [];
+      var timer = 0;
+
+      function looseTime() {
+        if(userAnswer !== answers) {
+          timer--;
+      }
+      };
+
+    </script>
+  </body>
+</html>
